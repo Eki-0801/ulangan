@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tipe Data Objek</title>
+</head>
+<body>
+    <script>
+        //Null itu tidak memiliki nilai atau nilai kosong
+        //objek yaitu yang memiliki properti (objek variabel)
+        var a;
+        a = null;
+        var b = null;
+
+        console.log(a);
+        console.log(b);
+        console.log(typeof a);
+
+        var sepatu = {
+            namaProduk   : "Adidas",
+            namaUkuran  : "37",
+            namaWarna: "Putih",
+            Harga: function (){
+                alert(`nama: ${this.namaProduk} ukuran: ${this.namaUkuran} warna:${this.namaWarna}`)
+            }
+        };
+
+        sepatu.Harga();
+    </script>
+</body>
+</html>
